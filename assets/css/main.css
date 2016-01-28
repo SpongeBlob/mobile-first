@@ -1,15 +1,13 @@
-@import url("../css/reset.css");
+@import url("reset.css");
 /**Lien reset**/
 /**Lien variables**/
 /** Texte **/
 /*wrapper*/
 /** Texte **/
-/* line 8, main.less */
 body {
   font: 1.4375em / 1.5em avenir, verdana sans-serif;
-  color: #1d1f20;
+  color: #000000;
 }
-/* line 13, main.less */
 h1,
 h2 {
   font-size: 3em;
@@ -17,21 +15,41 @@ h2 {
   line-height: 1.2em;
   margin-bottom: 1em;
 }
-/* line 20, main.less */
 h2 {
   font-size: 2em;
 }
-/* line 25, main.less */
 p {
   margin-bottom: 1.5em;
 }
-/* line 30, main.less */
-.banner,
-article {
-  width: 72rem;
-  margin-left: auto;
-  margin-right: auto
-  /*12 colonnes*/
-}
 /*Structure*/
+@media screen and (max-width: 766px) {
+  .banner,
+  main,
+  .main-footer {
+    width: 36rem;
+    margin-left: auto;
+    margin-right: auto
+    /*6 colonnes*/
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1278px) {
+  .banner,
+  main,
+  .main-footer {
+    width: 60rem;
+    margin-left: auto;
+    margin-right: auto
+    /*10 colonnes*/
+  }
+}
+@media screen and (min-width: 1279px) {
+  .banner,
+  main,
+  .main-footer {
+    width: 72rem;
+    margin-left: auto;
+    margin-right: auto
+    /*12 colonnes*/
+  }
+}
 /*# sourceMappingURL=main.css.map */

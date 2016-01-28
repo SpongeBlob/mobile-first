@@ -7,7 +7,7 @@
 /** Texte **/
 body
 {
-	font: unit((@font-normal / @font-root), em) /1.5em futura, verdana sans-serif;
+	font: unit((@font-normal / @font-root), em) /1.5em avenir, verdana sans-serif;
 	color: @color-text;
 }
 h1
@@ -27,10 +27,25 @@ p
 	margin-bottom: 1.5em;
 }
 
-.banner, article, .main-footer
+/*Structure*/
+@media screen and(max-width:766px){
+.banner, main, .main-footer 
+{
+  .wrapper(6);/*6 colonnes*/
+}   
+}
+
+@media screen and (min-width:767px)and(max-width:1278px){
+.banner, main, .main-footer 
+{
+  .wrapper(10);/*10 colonnes*/
+}   
+}
+
+@media screen and (min-width:1279px){
+    .banner, main, .main-footer 
 {
   .wrapper(12);/*12 colonnes*/
 }
+}
 
-
-/*Structure*/
