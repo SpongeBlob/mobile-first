@@ -1,0 +1,36 @@
+/**Lien reset**/
+@import url("reset.css");
+
+/**Lien variables**/
+@import url("../libs/variables.less");
+
+/** Texte **/
+body
+{
+	font: unit((@font-normal / @font-root), em) /1.5em futura, verdana sans-serif;
+	color: @color-text;
+}
+h1
+{
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin-bottom: 1em;
+}
+h2
+{
+	&:extend(h1);
+	font-size: 2em;
+}
+p
+{
+	margin-bottom: 1.5em;
+}
+
+.banner, article, .main-footer
+{
+  .wrapper(12);/*12 colonnes*/
+}
+
+
+/*Structure*/
